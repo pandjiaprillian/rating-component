@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primaryFont: 'Inter', sans-serif;
+    --primaryColor: #1E252F;
+    --secondaryColor: #262F38;
+    --textColor: #ffffff;
+    --textGrayColor: #888686;
+    --themeColor: #F07013;
+}
+
+body {
+    background-color: rgb(91, 131, 133);
+}
+
+.container {
+    width: 25rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: var(--primaryColor);
+    color: seashell;
+    font-family: var(--primaryFont);
+    border-radius: 1.8rem;
+}
+
+.star-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: var(--secondaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+p {
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.rating {
+    display: flex;
+    gap: 1rem;
+}
+
+.rating .circle {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    color: var(--textColor);
+    border-radius: 100%;
+    text-decoration: none;
+}
+
+.rating .circle:hover {
+    background-color: var(--textGrayColor);
+}
+
+.rating .circle:focus {
+    background-color: var(--themeColor);
+}
+
+button.submit {
+    border: none;
+    margin-top: 1.6rem;
+    padding: 0.9rem;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: var(--themeColor);
+    color: var(--textColor);
+    font-family: var(--primaryFont);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+button.submit:hover {
+    cursor: pointer;
+    background-color: var(--textColor);
+    color: var(--themeColor);
+}
+
+/* result */
+.result {
+    text-align: center;
+}
+
+.result img {
+    width: 200px;
+}
+
+.result h3 {
+    margin: 0.4rem 0;
+}
+
+.result-box {
+    width: 80%;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    display: inline-block;
+    background-color: var(--secondaryColor);
+    color: var(--themeColor);
+    border-radius: 2rem;
+}
+
+.result-box .rating-user {
+    font-weight: 500;
+}
+
+.result p:last-child {
+    font-weight: 200;
+}
+
+/* breakpoint */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 0.9rem;
+    }
+}
